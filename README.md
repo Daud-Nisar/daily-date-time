@@ -41,6 +41,7 @@ cd daily-date-time
 
 ### 2. Run the Script
 Make sure Python is installed, then:
+```bash
 python main.py
 
 ### 🔍 Code Breakdown (main.py)
