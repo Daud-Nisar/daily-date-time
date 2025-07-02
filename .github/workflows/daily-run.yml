@@ -1,30 +1,33 @@
 name: 🕒 Daily Time Logger
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: '0 4 * * *'  # Runs daily at 9 AM Pakistan Time (UTC+5)
-  workflow_dispatch:      # Allows manual run
+    - cron: '0 6 * * *'  # 11 AM PKT daily
+
+permissions:
+  contents: write
 
 jobs:
-  run-datetime-script:
+  log-time:
     runs-on: ubuntu-latest
 
     steps:
-    - name: 📥 Clone Repository
-      uses: actions/checkout@v3
+      - name: 📥 Checkout Code
+        uses: actions/checkout@v3
 
-    - name: 🐍 Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
 
-    - name: ▶️ Run Script
-      run: python main_cli.py
+      - name: ▶️ Run Script
+        run: python main_cli.py
 
-    - name: 🚀 Commit & Push log.txt
-      run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add log.txt
-        git commit -m "📅 Daily log update"
-        git push
+      - name: 📤 Commit & Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add log.txt
+          git commit -m "🕒 Auto-update log.txt via GitHub Actions"
+          git push
