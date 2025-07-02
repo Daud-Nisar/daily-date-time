@@ -62,8 +62,10 @@ print("📅 Date:", current_date)
 print("🕒 Time:", current_time)
 print("👋", greeting)
 
+---
 
-### 2. 🚀 Future Improvements
+
+##  🚀 Future Improvements
 -  Add GUI using Tkinter
 - Save output to a .txt file
 - Auto-push current time daily to GitHub using GitHub Actions
