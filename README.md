@@ -64,24 +64,28 @@ print("👋", greeting)
 
 ---
 
-
+---
 ##  🚀 Future Improvements
 -  Add GUI using Tkinter
 - Save output to a .txt file
 - Auto-push current time daily to GitHub using GitHub Actions
 -  Add support for other timezones
-
+---
+---
 ## 🙋‍♂️ About Me
 Daud Nisar — Python Developer from Pakistan 🇵🇰
 💼 Specializing in:
 - Python Scripts & Automation
 - Web Scraping
 - QA Testing with Selenium
+---
 
+---
 ## 🔗 Connect with Me
 
 [💻 GitHub](https://github.com/Daud-Nisar) | [💼 LinkedIn](https://www.linkedin.com/in/daud-nisar-aa88a9222/) | [🧰 Upwork](https://www.upwork.com/freelancers/~0152296150762df3c8?mp_source=share)
-
+---
+---
 ## ⭐️ Support
 
 If you liked this project:
@@ -89,7 +93,7 @@ If you liked this project:
 - ⭐️ Star this repository  
 - ✅ Follow me on [GitHub](https://github.com/Daud-Nisar)  
 - 💬 Share your feedback or suggest improvements
-
+---
 
 
 
