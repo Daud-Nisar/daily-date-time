@@ -1,34 +1,49 @@
-# 🕒 Daily Date-Time
+<h1 align="center">🕒 Daily Date-Time</h1>
 
-""" A beginner-friendly Python script that displays the current date, time, and a context-aware greeting. """
+<p align="center">
+  A beginner-friendly Python script that displays the current <strong>date</strong>, <strong>time</strong>, and a context-aware <strong>greeting</strong>.
+</p>
 
-# ----------- Overview -----------
+<p align="center">
+  <img src="https://img.shields.io/badge/Language-Python-blue?style=flat-square">
+  <img src="https://img.shields.io/github/last-commit/Daud-Nisar/daily-date-time?style=flat-square">
+  <img src="https://img.shields.io/github/repo-size/Daud-Nisar/daily-date-time?style=flat-square">
+</p>
 
-# This script prints:
-# 📅 Current date
-# 🕒 Current time
-# 👋 A greeting based on your time:
-#   - ☀️ Good Morning (before 12 PM)
-#   - 🌤️ Good Afternoon (12 PM – 5 PM)
-#   - 🌙 Good Evening (after 5 PM)
+---
 
-# ----------- Sample Output -----------
+## 📌 Overview
 
-# 📅 Date: Tuesday, 02 July 2025
-# 🕒 Time: 10:23:45 AM
-# 👋 Good Morning ☀️
+This script prints the current date and time based on your local machine’s clock and gives a greeting like:
 
-# ----------- How to Use -----------
+- ☀️ Good Morning (before 12 PM)
+- 🌤️ Good Afternoon (12 PM – 5 PM)
+- 🌙 Good Evening (after 5 PM)
 
-# 1. Clone the repository:
-# git clone https://github.com/Daud-Nisar/daily-date-time.git
-# cd daily-date-time
+It’s a simple project made to practice Python basics, working with `datetime`, and printing clean output.
 
-# 2. Run the script:
-# python main.py
+---
 
-# ----------- Code (main.py) -----------
+## 🖼️ Sample Output
 
+📅 Date: Tuesday, 02 July 2025
+🕒 Time: 10:23:45 AM
+👋 Good Morning ☀️
+
+---
+
+## 💻 How to Use
+
+### 1. Clone or Download the Repository
+```bash
+git clone https://github.com/Daud-Nisar/daily-date-time.git
+cd daily-date-time
+
+### 2. Run the Script
+Make sure Python is installed, then:
+python main.py
+
+### 🔍 Code Breakdown (main.py)
 from datetime import datetime
 
 now = datetime.now()
@@ -47,31 +62,39 @@ print("📅 Date:", current_date)
 print("🕒 Time:", current_time)
 print("👋", greeting)
 
-# ----------- Future Improvements -----------
+---
 
-# - Add GUI using Tkinter
-# - Save output to a .txt file
-# - Auto-push time daily to GitHub using GitHub Actions
-# - Add support for other timezones
 
-# ----------- About Me -----------
+##  🚀 Future Improvements
+-  Add GUI using Tkinter
+- Save output to a .txt file
+- Auto-push current time daily to GitHub using GitHub Actions
+-  Add support for other timezones
+---
 
-# Daud Nisar — Python Developer from Pakistan 🇵🇰
-# 💼 Specializing in:
-#   - Python Scripts & Automation
-#   - Web Scraping
-#   - QA Testing with Selenium
+## 🙋‍♂️ About Me
+Daud Nisar — Python Developer from Pakistan 🇵🇰
+💼 Specializing in:
+- Python Scripts & Automation
+- Web Scraping
+- QA Testing with Selenium
+---
 
-# ----------- Connect with Me -----------
 
-# 💻 GitHub: https://github.com/Daud-Nisar
-# 💼 LinkedIn: https://www.linkedin.com/in/daud-nisar-aa88a9222/
-# 🧰 Upwork: https://www.upwork.com/freelancers/~0152296150762df3c8?mp_source=share
+## 🔗 Connect with Me
 
-# ----------- Support -----------
+[💻 GitHub](https://github.com/Daud-Nisar) | [💼 LinkedIn](https://www.linkedin.com/in/daud-nisar-aa88a9222/) | [🧰 Upwork](https://www.upwork.com/freelancers/~0152296150762df3c8?mp_source=share)
 
-# ⭐️ Star this repository
-# ✅ Follow me on GitHub
-# 💬 Share your feedback or suggest improvements
+---
+## ⭐️ Support
 
-# 📅 Built with 💖 in Pakistan
+If you liked this project:
+
+- ⭐️ Star this repository  
+- ✅ Follow me on [GitHub](https://github.com/Daud-Nisar)  
+- 💬 Share your feedback or suggest improvements
+
+
+
+
+
