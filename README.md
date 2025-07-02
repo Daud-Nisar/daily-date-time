@@ -51,7 +51,7 @@ python main_cli.py
 ## 🖥️ 2. GUI Version
 ```bash
 python main_gui.py
-
+```
 ## 🤖 GitHub Actions Automation
 This project uses GitHub Actions to:
 - Run the main_cli.py script daily at 11:00 AM Pakistan Time
