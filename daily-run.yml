@@ -1,0 +1,30 @@
+name: 🕒 Daily Time Logger
+
+on:
+  schedule:
+    - cron: '0 4 * * *'  # Runs daily at 9 AM Pakistan Time (UTC+5)
+  workflow_dispatch:      # Allows manual run
+
+jobs:
+  run-datetime-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 📥 Clone Repository
+      uses: actions/checkout@v3
+
+    - name: 🐍 Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: ▶️ Run Script
+      run: python main_cli.py
+
+    - name: 🚀 Commit & Push log.txt
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add log.txt
+        git commit -m "📅 Daily log update"
+        git push
