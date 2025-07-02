@@ -62,7 +62,7 @@ else:
 print("📅 Date:", current_date)
 print("🕒 Time:", current_time)
 print("👋", greeting)
-
+ ```
 ---
 
 ##  🚀 Future Improvements
