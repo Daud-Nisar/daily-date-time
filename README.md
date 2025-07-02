@@ -52,6 +52,28 @@ python main_cli.py
 ```bash
 python main_gui.py
 ```
+### 🔍 Code Breakdown (`main.py`)
+
+python
+from datetime import datetime
+
+now = datetime.now()
+current_time = now.strftime("%I:%M:%S %p")
+current_date = now.strftime("%A, %d %B %Y")
+hour = now.hour
+
+if hour < 12:
+    greeting = "Good Morning ☀️"
+elif 12 <= hour < 17:
+    greeting = "Good Afternoon 🌤️"
+else:
+    greeting = "Good Evening 🌙"
+
+print("📅 Date:", current_date)
+print("🕒 Time:", current_time)
+print("👋", greeting)
+---
+
 ## 🤖 GitHub Actions Automation
 This project uses GitHub Actions to:
 - Run the main_cli.py script daily at 11:00 AM Pakistan Time
