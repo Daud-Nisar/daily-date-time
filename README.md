@@ -58,14 +58,14 @@ This project uses GitHub Actions to:
 - Automatically update log.txt
 - Commit & push changes back to the repo0
 * You can also run it manually via the Actions tab
-
+```
 #📄 Sample log.txt Entry
 📅 Date: 2025-07-02
 🕒 Time: 11:14:00 AM
 👋 Good Morning ☀️
 ------------------------------
 
-#🙋‍♂️ About Me
+## 🙋‍♂️ About Me
 Daud Nisar — Python Developer from Pakistan 🇵🇰
 💼 Specializing in:
 
