@@ -59,7 +59,7 @@ This project uses GitHub Actions to:
 - Commit & push changes back to the repo0
 * You can also run it manually via the Actions tab
 ```
-#📄 Sample log.txt Entry
+📄 Sample log.txt Entry
 📅 Date: 2025-07-02
 🕒 Time: 11:14:00 AM
 👋 Good Morning ☀️
