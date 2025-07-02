@@ -108,5 +108,6 @@ If you liked this project:
 - ⭐️ Star this repository  
 - ✅ Follow me on [GitHub](https://github.com/Daud-Nisar)  
 - 💬 Share your feedback or suggestions
+- ☁️ Fully automated with GitHub Actions and daily logging
 
 
