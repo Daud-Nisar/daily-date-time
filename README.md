@@ -54,7 +54,7 @@ python main_gui.py
 ```
 ### 🔍 Code Breakdown (`main.py`)
 
-python
+```python
 from datetime import datetime
 
 now = datetime.now()
@@ -72,7 +72,7 @@ else:
 print("📅 Date:", current_date)
 print("🕒 Time:", current_time)
 print("👋", greeting)
----
+```
 
 ## 🤖 GitHub Actions Automation
 This project uses GitHub Actions to:
