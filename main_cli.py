@@ -1,19 +1,24 @@
 from datetime import datetime
+from zoneinfo import ZoneInfo
 
-now = datetime.now()
+# Pakistan Standard Time
+now = datetime.now(ZoneInfo("Asia/Karachi"))
+
+# Format date and time
 current_time = now.strftime("%I:%M:%S %p")
 current_date = now.strftime("%A, %d %B %Y")
+
+# Greeting based on Pakistan time
 hour = now.hour
 
 if hour < 12:
     greeting = "Good Morning ☀️"
-elif 12 <= hour < 17:
+elif hour < 17:
     greeting = "Good Afternoon 🌤️"
 else:
     greeting = "Good Evening 🌙"
 
-with open("log.txt", "a", encoding="utf-8") as file:
-    file.write(f"📅 Date: {current_date}\n")
-    file.write(f"🕒 Time: {current_time}\n")
-    file.write(f"👋 {greeting}\n")
-    file.write("-" * 30 + "\n")
+# Output
+print("📅 Date:", current_date)
+print("🕒 Time:", current_time)
+print("👋", greeting)
