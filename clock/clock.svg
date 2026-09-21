@@ -1,1 +1,95 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pakistan Standard Time</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #0b0b0b;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    .clock {
+      text-align: center;
+      padding: 28px 45px;
+      border: 1px solid #7a2e00;
+      border-radius: 18px;
+      background: #111111;
+      box-shadow: 0 0 30px rgba(244, 81, 30, 0.15);
+    }
+
+    .label {
+      color: #ffb300;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      margin-bottom: 10px;
+    }
+
+    #time {
+      color: #ff8f00;
+      font-size: 42px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      font-family: Consolas, monospace;
+    }
+
+    #date {
+      color: #bbbbbb;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="clock">
+    <div class="label">PAKISTAN STANDARD TIME</div>
+    <div id="time">00:00:00</div>
+    <div id="date">Loading...</div>
+  </div>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+
+      const time = new Intl.DateTimeFormat("en-GB", {
+        timeZone: "Asia/Karachi",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: false
+      }).format(now);
+
+      const date = new Intl.DateTimeFormat("en-GB", {
+        timeZone: "Asia/Karachi",
+        day: "2-digit",
+        month: "short",
+        year: "numeric"
+      }).format(now);
+
+      document.getElementById("time").textContent = time;
+      document.getElementById("date").textContent = date;
+    }
+
+    updateClock();
+    setInterval(updateClock, 1000);
+  </script>
+
+</body>
+</html>
+```
 
